@@ -1,0 +1,20 @@
+{
+  "NuxtLogo": {
+    "description": "Auto imported from components/NuxtLogo.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  },
+  "SiteChatmixFeatures": {
+    "description": "Auto imported from components/site/ChatmixFeatures.vue"
+  },
+  "SiteCRMFeatures": {
+    "description": "Auto imported from components/site/CRMFeatures.vue"
+  },
+  "SiteFooterSite": {
+    "description": "Auto imported from components/site/FooterSite.vue"
+  },
+  "SiteHeaderSite": {
+    "description": "Auto imported from components/site/HeaderSite.vue"
+  }
+}
