@@ -1,7 +1,20 @@
 <template>
   <div class="bg-white">
+    <CookieControl locale="pt">
+      <template v-slot:bar>
+        <h3>Bar title</h3>
+        <p>Bar description (you can use $cookies.text.barDescription)</p>
+        <n-link>Go somewhere</n-link>
+      </template>
+
+      <template v-slot:modal>
+        <h3>Modal title</h3>
+        <p>Modal description</p>
+      </template>
+    </CookieControl>
     <header>
       <div class="relative bg-white">
+        
         <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <a href="/" class="flex items-center">
@@ -45,98 +58,18 @@
           <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
             <div class="pt-5 pb-6 px-5">
               <div class="flex items-center justify-between">
-                <div>
-                  <a href="#" class="flex items-center">
-                    <img class="h-8 w-auto sm:h-10" src="@/assets/img/logo.png" alt="">
+                <a href="#" class="flex items-center">
+                    <img class="h-8 w-auto sm:h-10" src="@/assets/img/logo.png" alt="vmix-solucoes">
                     <span class="">VMIX</span>
                   </a>
-                </div>
-                <div class="-mr-2">
-                  <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                    <span class="sr-only">Close menu</span>
-                    <!-- Heroicon name: outline/x -->
-                    <svg
-                      class="h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="mt-6">
-                <nav class="grid grid-cols-1 gap-7">
-                  <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
-                    <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-600 text-white">
-                      <!-- Heroicon name: outline/inbox -->
-                      <svg
-                        class="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
-                      </svg>
-                    </div>
-                    <div class="ml-4 text-base font-medium text-gray-900">Soluções</div>
-                  </a>
-
-                  <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
-                    <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-600 text-white">
-                      <!-- Heroicon name: outline/annotation -->
-                      <svg
-                        class="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                      </svg>
-                    </div>
-                    <div class="ml-4 text-base font-medium text-gray-900">Clientes </div>
-                  </a>
-
-                  <a href="#" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
-                    <div class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-600 text-white">
-                      <!-- Heroicon name: outline/chat-alt-2 -->
-                      <svg
-                        class="h-6 w-6"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                      >
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-                      </svg>
-                    </div>
-                    <div class="ml-4 text-base font-medium text-gray-900"> Sobre Nós </div>
-                  </a>
-
-                  
-                </nav>
-              </div>
-            </div>
-            <div class="py-6 px-5">
-              
-              <div class="">
-                <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"> Fale Conosco </a>
-                
+                  <a href="#" class=" flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"> Fale Conosco </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-
+    
     <main>
       <div>
         <!-- Hero card -->
@@ -174,11 +107,11 @@
               Confiado por mais de 300 empresas em todo o país
             </p>
             <div class="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-              <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img class="h-12" src="@/assets/img/franet-logo.png" alt="Franet telecom">
+              <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1 grayscale-0">
+                <img class="h-12 " src="@/assets/img/clients/alien-logo.png" alt="Alien Network">
               </div>
-              <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img class="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage">
+              <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1 grayscale-0">
+                <img class="h-12  grayscale-0" src="@/assets/img/clients/conexao-net-color.png" alt="Mirage">
               </div>
               <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
                 <img class="h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit">
@@ -200,7 +133,9 @@
 </template>
 
 <script>
-export default {
-  name: 'HeaderSite'
+export default  {
+  name: 'HeaderSite',
+  components: {
+  },
 }
 </script>

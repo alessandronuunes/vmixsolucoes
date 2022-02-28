@@ -9,6 +9,7 @@ You can directly use them in pages and other components without the need to impo
 - `<NuxtLogo>` | `<nuxt-logo>` (components/NuxtLogo.vue)
 - `<Tutorial>` | `<tutorial>` (components/Tutorial.vue)
 - `<SiteChatmixFeatures>` | `<site-chatmix-features>` (components/site/ChatmixFeatures.vue)
+- `<SiteContactFeatures>` | `<site-contact-features>` (components/site/ContactFeatures.vue)
 - `<SiteCRMFeatures>` | `<site-c-r-m-features>` (components/site/CRMFeatures.vue)
 - `<SiteFooterSite>` | `<site-footer-site>` (components/site/FooterSite.vue)
 - `<SiteHeaderSite>` | `<site-header-site>` (components/site/HeaderSite.vue)

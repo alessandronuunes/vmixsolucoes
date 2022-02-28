@@ -2,18 +2,23 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: 'static',
   head: {
-    title: 'vmix-site',
+    title: 'vmix desenvolvimento de software',
     htmlAttrs: {
       lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'Com as soluções da VMIX você oferece uma comunicação automatizada e eficiente sem perder o lado humano.' },
+      { hid: 'keywords', name: 'keywords', content: 'chat-boot, multi-atendentes, WhatsApp, provedor-de-internet' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og-type', property: 'og:type', content: 'website' },
+      { hid: 'og-url', property: 'og:url', content: 'https://vmixsolucoes.com.br' },
+      { hid: 'og-image', property: 'og:image',  content: 'https://vmixsolucoes.com.br/assets/images/color_icon.png' },
+      { hid: 't-type', name: 'twitter:card', content: 'summary_large_image' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: './assets/favicon.ico' }
     ]
   },
 
@@ -38,8 +43,10 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios'
+    [ '@nuxtjs/axios', 
+      'cookie-universal-nuxt', 
+      'nuxtjs-mdi-font'      
+    ]
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -52,3 +59,4 @@ export default {
   build: {
   }
 }
+

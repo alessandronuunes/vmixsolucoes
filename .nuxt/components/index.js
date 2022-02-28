@@ -1,6 +1,7 @@
 export { default as NuxtLogo } from '../..\\components\\NuxtLogo.vue'
 export { default as Tutorial } from '../..\\components\\Tutorial.vue'
 export { default as SiteChatmixFeatures } from '../..\\components\\site\\ChatmixFeatures.vue'
+export { default as SiteContactFeatures } from '../..\\components\\site\\ContactFeatures.vue'
 export { default as SiteCRMFeatures } from '../..\\components\\site\\CRMFeatures.vue'
 export { default as SiteFooterSite } from '../..\\components\\site\\FooterSite.vue'
 export { default as SiteHeaderSite } from '../..\\components\\site\\HeaderSite.vue'

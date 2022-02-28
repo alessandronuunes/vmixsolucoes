@@ -8,6 +8,9 @@
   "SiteChatmixFeatures": {
     "description": "Auto imported from components/site/ChatmixFeatures.vue"
   },
+  "SiteContactFeatures": {
+    "description": "Auto imported from components/site/ContactFeatures.vue"
+  },
   "SiteCRMFeatures": {
     "description": "Auto imported from components/site/CRMFeatures.vue"
   },
