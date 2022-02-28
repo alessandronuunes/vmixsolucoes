@@ -4,9 +4,9 @@
       <div class="relative bg-white">
         <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
           <div class="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#" class="flex items-center">
-              <img class="h-8 w-auto sm:h-10" src="@/assets/img/logo.png" alt="">
-              <span class="">VMIX</span>
+            <a href="/" class="flex items-center">
+              <img class="h-8 w-auto sm:h-10" src="@/assets/img/pack-logo/color/color_vertical_compact.png" alt="">
+              <span class=""></span>
             </a>
           </div>
           <div class="-mr-2 -my-2 md:hidden">
@@ -25,15 +25,9 @@
               </svg>
             </button>
           </div>
-          <nav class="hidden md:flex space-x-10">
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Soluções </a>
-
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Clientes </a>
-
-            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Sobre nós </a>
-          </nav>
+          
           <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="#" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">Fale Conosco </a>
+            <a target="_BLANCK" href="https://wa.me/554331421104?&text=Olá%20gostaria%20de%20saber%20mais%20informações%20sobre%20o%20vmix" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">Fale Conosco </a>
           </div>
         </div>
 
@@ -164,8 +158,8 @@
                 </p>
                 <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                   <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                    <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"> Conheça o chatmix </a>
-                    <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"> Teste Gratis por 7 Dias </a>
+                    <a target="_BLANK" href="https://wa.me/554331421104?&text=Olá,%20Gostaria%20de%20conhecer%20o%20chatmix" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8"> Conheça o chatmix </a>
+                    <a target="_BLANK" href="https://wa.me/554331421104?&text=Ola%20gostaria%20de%20testar%20gratis%20o%20chatmix%20por%207%20dias" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"> Teste Gratis por 7 Dias </a>
                   </div>
                 </div>
               </div>

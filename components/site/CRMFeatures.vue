@@ -76,14 +76,36 @@
                   </svg>
                 </div>
                 <p class="mt-5 text-lg leading-6 font-medium text-gray-900">
-                  Atendimento via WhatsApp
+                  Atendimento automático com chatbots
                 </p>
               </dt>
               <dd class="mt-2 text-base text-gray-500">
-                Consequuntur omnis dicta cumque, inventore atque ab dolores aspernatur tempora ab doloremque.
+                A VMIX possui uma solução de atendimento a clientes com inteligência artificial que combina chatbots (assistentes virtuais) com atendimento humano em diversos canais.
               </dd>
             </div>
-
+            <div>
+              <dt>
+                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                  <!-- Heroicon name: outline/mail -->
+                  <svg
+                    class="h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <p class="mt-5 text-lg leading-6 font-medium text-gray-900">
+                  Auditoria dos atendimentos
+                </p>
+              </dt>
+              <dd class="mt-2 text-base text-gray-500">
+                Possua o controle de todos os seus atendimentos na palma da sua mão, atravez da nossa ferramenta de auditoria.
+              </dd>
+            </div>
             <div>
               <dt>
                 <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
@@ -104,7 +126,7 @@
                 </p>
               </dt>
               <dd class="mt-2 text-base text-gray-500">
-                Corporis quisquam nostrum nulla veniam recusandae temporibus aperiam officia incidunt at distinctio ratione.
+                Coloque toda a sua equipe para trabalhar, sem custo adicional, aqui os atendentes são ilimitados
               </dd>
             </div>
 
@@ -128,33 +150,11 @@
                 </p>
               </dt>
               <dd class="mt-2 text-base text-gray-500">
-                Omnis, illo delectus? Libero, possimus nulla nemo tenetur adipisci repellat dolore eligendi velit doloribus mollitia.
+                Envie mensagens aos seus clientes de forma rapida e integrada ao seu ERP
               </dd>
             </div>
 
-            <div>
-              <dt>
-                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                  <!-- Heroicon name: outline/mail -->
-                  <svg
-                    class="h-6 w-6"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <p class="mt-5 text-lg leading-6 font-medium text-gray-900">
-                  Auditoria dos atendimentos
-                </p>
-              </dt>
-              <dd class="mt-2 text-base text-gray-500">
-                Veniam necessitatibus reiciendis fugit explicabo dolorem nihil et omnis assumenda odit? Quisquam unde accusantium.
-              </dd>
-            </div>
+            
           </dl>
         </div>
       </div>
