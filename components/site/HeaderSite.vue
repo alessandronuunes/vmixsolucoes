@@ -28,7 +28,7 @@
           </div>
           
           <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a target="_BLANCK" href="https://wa.me/554331421104?&text=Olá%20gostaria%20de%20saber%20mais%20informações%20sobre%20o%20vmix" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">Fale Conosco </a>
+            <a target="_BLANCK" href="#contact" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">Fale Conosco </a>
           </div>
         </div>
 

@@ -15,14 +15,12 @@
   ```
 -->
 <template>
-	<div class="bg-gray-100">
+	<div id="contact" class="bg-gray-100">
 		<div class="max-w-7xl mx-auto px-4 sm:py-24 sm:px-6 lg:px-8">
 			<div class="relative bg-white shadow-xl">
 				<h2 class="sr-only">Fale Conosco</h2>
-
 				<div class="grid grid-cols-1 lg:grid-cols-3">
 					<!-- Contact information -->
-
 					<div
 						class="
 							relative
@@ -260,8 +258,10 @@
 
 						<form
 							name="contact"
-							netlify
-							@submit.prevent="onSubmit"
+							method="post"
+							data-netlify="true"
+							data-netlify-honeypot="bot-field"
+							action="/contact"
 							class="
 								mt-6
 								grid grid-cols-1
@@ -270,6 +270,7 @@
 							"
 						>
 							<div>
+								<input type="hidden" name="form-name" value="contact">
 								<label
 									for="first-name"
 									class="
@@ -500,8 +501,6 @@
 
 							<div class="sm:col-span-2 sm:flex sm:justify-end">
 								<button
-									@click.prevent="validateForm"
-									:class="{disabled: form.sending}"
 									type="submit"
 									class="
 										mt-2
