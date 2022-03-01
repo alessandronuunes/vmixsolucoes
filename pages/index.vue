@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <HeaderSite />
     <ChatmixFeatures />
     <CRMFeatures />
@@ -17,6 +17,7 @@ import FooterSite from './../components/site/FooterSite'
 
 export default {
   name: 'IndexPage',
-  components: { HeaderSite, ChatmixFeatures, CRMFeatures, ContactSite, FooterSite }
+  components: { HeaderSite, ChatmixFeatures, CRMFeatures, ContactSite, FooterSite },
+  
 }
 </script>

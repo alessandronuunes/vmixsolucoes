@@ -509,7 +509,7 @@
 										sm:w-auto
 									"
 								>
-									{{ loading ? 'Enviar' : 'Enviando...' }}
+									Enviar
 								</button>
 							</div>
 							
