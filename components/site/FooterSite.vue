@@ -52,10 +52,10 @@
     <div>
         <cookie-law theme="royal">
           <div slot-scope="props" class="text-center text-xl tracking-tight w-full ">
-            <div class="pb-6">
+            <div class="pb-6 text-md">
               Este site usa cookies para garantir que você tenha a melhor experiência em nosso site.
             </div>
-            <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
+            <div class=" space-y-0 mx-auto inline-grid grid-cols-2 gap-5">
               <button class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8" @click="props.close"><span>Não Obrigado</span></button>
               <button class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-900 hover:bg-opacity-70 sm:px-8" @click="props.accept"><span>Eu aceito</span></button>
             </div>

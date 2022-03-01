@@ -259,6 +259,8 @@
 						</h3>
 
 						<form
+							name="contact"
+							netlify
 							@submit.prevent="onSubmit"
 							class="
 								mt-6
@@ -281,7 +283,7 @@
 
 								<div class="mt-1">
 									<input
-										v-model="firstName"
+										v-model="form.firstName"
 										type="text"
 										name="first-name"
 										id="first-name"
@@ -316,7 +318,7 @@
 
 								<div class="mt-1">
 									<input
-										v-model="lastName"
+										v-model="form.lastName"
 										type="text"
 										name="last-name"
 										id="last-name"
@@ -351,7 +353,7 @@
 
 								<div class="mt-1">
 									<input
-										v-model="email"
+										v-model="form.email"
 										id="email"
 										name="email"
 										type="email"
@@ -395,7 +397,7 @@
 								<div class="mt-1">
 									<input
 										type="text"
-										v-model="phoneNumber"
+										v-model="form.phoneNumber"
 										autocomplete="tel"
 										name="phone"
 										id="phone"
@@ -430,7 +432,7 @@
 
 								<div class="mt-1">
 									<input
-										v-model="subject"
+										v-model="form.subject"
 										autocomplete="off"
 										type="text"
 										name="subject"
@@ -475,7 +477,7 @@
 									<textarea
 										id="message"
 										name="message"
-										v-model="message"
+										v-model="form.message"
 										autocomplete="off"
 										placeholder="Informe a sua mensagem"
 										rows="4"
@@ -498,8 +500,9 @@
 
 							<div class="sm:col-span-2 sm:flex sm:justify-end">
 								<button
+									@click.prevent="validateForm"
+									:class="{disabled: form.sending}"
 									type="submit"
-									v-if="!loading"
 									class="
 										mt-2
 										w-full
@@ -523,10 +526,10 @@
 										sm:w-auto
 									"
 								>
-									Enviar
+									{{ loading ? 'Enviar' : 'Enviando...' }}
 								</button>
-								<p v-else>Carregando...</p>
 							</div>
+							
 						</form>
 					</div>
 				</div>
@@ -535,22 +538,84 @@
 	</div>
 </template>
 <script>
+
 export default {
 	name: "ContactFeatures",
 	
 	data() {
 		return {
-			firstName: "",
-			lastName: "",
-			subject: "",
-			email: "",
-			phoneNumber: "",
-			message: "",
+			form:{
+				firstName: "",
+				lastName: "",
+				subject: "",
+				email: "",
+				phoneNumber: "",
+				message: "",
+			},
 			notificationMessage: "",
 			errorStatus: false,
+			errors: [],
+			success: false,
 			loading: false,
 		};
 	},
+	methods: {
+		validateForm() {
+			this.success = false;
+			this.errors = [];
+			if (!this.form.email) {
+				this.errors.push('Email required.');
+			} else if (!this.validEmail(this.form.email)) {
+				this.errors.push('Valid email required.');
+			}
+			if (!this.errors.length) {
+				this.handleSendMessage();
+				return true;
+			} else {
+				this.closeFormStatus();
+			}
+		},
+		validEmail(email) {
+			var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			return re.test(email);
+		},
+		closeFormStatus() {
+			setTimeout(()=> {
+				this.errors = [];
+			}, 3000);
+		},
+		async handleSendMessage() {
+			this.loading = true;
+			this.errors.push('Carregando...');
+			try {
+				let message = `Contato via site de: ` 
+				this.$mail.send({
+					from: this.form.email,
+					subject: this.form.subject,
+					text: message,
+				})
+				const response = await this.axios.post('/api/subscribe', {email: this.form.email});
+				this.success = true;
+				this.resetForm();
+				this.errors.push(`Thank you: ${this.form.email} ${response.data}!`);
+			} catch (error) {
+				this.errors.push(`Error (${error.response.data.status}): ${error.response.data.title}`);
+			} finally {
+				this.closeFormStatus();
+				this.loading = false;
+			}
+		},
+		resetForm() {
+			setTimeout(() => {
+				this.firstName = "",
+				this.lastName = "",
+				this.subject = "",
+				this.email = "",
+				this.phoneNumber = "",
+				this.message = ""
+			}, 3000);
+		},
+    },
 	
 };
 </script>
