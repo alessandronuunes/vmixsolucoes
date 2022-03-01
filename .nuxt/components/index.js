@@ -1,10 +1,10 @@
-export { default as NuxtLogo } from '../..\\components\\NuxtLogo.vue'
-export { default as Tutorial } from '../..\\components\\Tutorial.vue'
-export { default as SiteChatmixFeatures } from '../..\\components\\site\\ChatmixFeatures.vue'
-export { default as SiteContactFeatures } from '../..\\components\\site\\ContactFeatures.vue'
-export { default as SiteCRMFeatures } from '../..\\components\\site\\CRMFeatures.vue'
-export { default as SiteFooterSite } from '../..\\components\\site\\FooterSite.vue'
-export { default as SiteHeaderSite } from '../..\\components\\site\\HeaderSite.vue'
+export const NuxtLogo = () => import('../..\\components\\NuxtLogo.vue' /* webpackChunkName: "components/nuxt-logo" */).then(c => wrapFunctional(c.default || c))
+export const Tutorial = () => import('../..\\components\\Tutorial.vue' /* webpackChunkName: "components/tutorial" */).then(c => wrapFunctional(c.default || c))
+export const SiteChatmixFeatures = () => import('../..\\components\\site\\ChatmixFeatures.vue' /* webpackChunkName: "components/site-chatmix-features" */).then(c => wrapFunctional(c.default || c))
+export const SiteContactFeatures = () => import('../..\\components\\site\\ContactFeatures.vue' /* webpackChunkName: "components/site-contact-features" */).then(c => wrapFunctional(c.default || c))
+export const SiteCRMFeatures = () => import('../..\\components\\site\\CRMFeatures.vue' /* webpackChunkName: "components/site-c-r-m-features" */).then(c => wrapFunctional(c.default || c))
+export const SiteFooterSite = () => import('../..\\components\\site\\FooterSite.vue' /* webpackChunkName: "components/site-footer-site" */).then(c => wrapFunctional(c.default || c))
+export const SiteHeaderSite = () => import('../..\\components\\site\\HeaderSite.vue' /* webpackChunkName: "components/site-header-site" */).then(c => wrapFunctional(c.default || c))
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
