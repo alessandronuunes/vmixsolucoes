@@ -245,7 +245,7 @@
 							method="post"
 							data-netlify="true"
 							data-netlify-honeypot="bot-field"
-							action="/contact"
+							action="/contato"
 							class="
 								mt-6
 								grid grid-cols-1

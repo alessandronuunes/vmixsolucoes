@@ -1,10 +1,10 @@
 [
   {
-    "name": "contact",
-    "path": "/contact",
-    "component": "C:\\\\xampp\\\\htdocs\\\\vmixsolucoes\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_47da5017"
+    "name": "contato",
+    "path": "/contato",
+    "component": "C:\\\\xampp\\\\htdocs\\\\vmixsolucoes\\\\pages\\\\contato.vue",
+    "chunkName": "pages/contato",
+    "_name": "_64963d21"
   },
   {
     "name": "index",
