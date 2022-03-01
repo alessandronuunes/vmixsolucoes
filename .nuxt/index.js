@@ -13,7 +13,9 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 /* Plugins */
 
 import nuxt_plugin_plugin_e990775c from 'nuxt_plugin_plugin_e990775c' // Source: .\\components\\plugin.js (mode: 'all')
+import nuxt_plugin_cookieuniversalnuxt_193bb91d from 'nuxt_plugin_cookieuniversalnuxt_193bb91d' // Source: .\\cookie-universal-nuxt.js (mode: 'all')
 import nuxt_plugin_axios_6f74b916 from 'nuxt_plugin_axios_6f74b916' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_CookieLaw_469174ad from 'nuxt_plugin_CookieLaw_469174ad' // Source: ..\\plugins\\CookieLaw.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -63,7 +65,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"vmix desenvolvimento de software","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Com as soluções da VMIX você oferece uma comunicação automatizada e eficiente sem perder o lado humano."},{"hid":"keywords","name":"keywords","content":"chat-boot, multi-atendentes, WhatsApp, provedor-de-internet"},{"name":"format-detection","content":"telephone=no"},{"hid":"og-type","property":"og:type","content":"website"},{"hid":"og-url","property":"og:url","content":"https:\u002F\u002Fvmixsolucoes.com.br"},{"hid":"og-image","property":"og:image","content":"https:\u002F\u002Fvmixsolucoes.com.br\u002Fassets\u002Fimages\u002Fcolor_icon.png"},{"hid":"t-type","name":"twitter:card","content":"summary_large_image"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":".\u002Fassets\u002Ffavicon.ico"}],"style":[],"script":[]},
+    head: {"title":"vmix desenvolvimento de software","htmlAttrs":{"lang":"en"},"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"format-detection","content":"telephone=no"},{"hid":"description","name":"description","content":"Com as soluções da VMIX você oferece uma comunicação automatizada e eficiente sem perder o lado humano."},{"hid":"keywords","name":"keywords","content":"chat-boot, multi-atendentes, WhatsApp, provedor-de-internet"},{"hid":"og-type","property":"og:type","content":"website"},{"hid":"og-url","property":"og:url","content":"https:\u002F\u002Fvmixsolucoes.com.br"},{"hid":"og-image","property":"og:image","content":"https:\u002F\u002Fvmixsolucoes.com.br\u002Fassets\u002Fimages\u002Fcolor_icon.png"},{"hid":"t-type","name":"twitter:card","content":"summary_large_image"}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":".\u002Fassets\u002Ffavicon.ico"}],"script":[],"style":[]},
 
     router,
     nuxt: {
@@ -181,8 +183,16 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_plugin_e990775c(app.context, inject)
   }
 
+  if (typeof nuxt_plugin_cookieuniversalnuxt_193bb91d === 'function') {
+    await nuxt_plugin_cookieuniversalnuxt_193bb91d(app.context, inject)
+  }
+
   if (typeof nuxt_plugin_axios_6f74b916 === 'function') {
     await nuxt_plugin_axios_6f74b916(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_CookieLaw_469174ad === 'function') {
+    await nuxt_plugin_CookieLaw_469174ad(app.context, inject)
   }
 
   // Lock enablePreview in context

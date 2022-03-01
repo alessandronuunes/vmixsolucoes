@@ -49,9 +49,22 @@
         </div>
       </div>
     </div>
-
+    <div>
+        <cookie-law theme="royal">
+          <div slot-scope="props" class="text-center text-xl tracking-tight w-full ">
+            <div class="pb-6">
+              Este site usa cookies para garantir que você tenha a melhor experiência em nosso site.
+            </div>
+            <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
+              <button class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8" @click="props.close"><span>Não Obrigado</span></button>
+              <button class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-900 hover:bg-opacity-70 sm:px-8" @click="props.accept"><span>Eu aceito</span></button>
+            </div>
+          </div>
+      </cookie-law>
+      </div>
     <!-- This example requires Tailwind CSS v2.0+ -->
     <footer class="bg-gray-50">
+      
       <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div class="flex justify-center space-x-6 md:order-2">
           <a href="https://www.facebook.com/vmixsolucoes" class="text-gray-400 hover:text-gray-500">
@@ -75,6 +88,8 @@
           </p>
         </div>
       </div>
+      
     </footer>
   </div>
 </template>
+

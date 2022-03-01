@@ -1,17 +1,6 @@
 <template>
   <div>
-    <CookieControl locale="pt">
-      <template v-slot:bar>
-        <h3>Bar title</h3>
-        <p>Bar description (you can use $cookies.text.barDescription)</p>
-        <n-link>Go somewhere</n-link>
-      </template>
-
-      <template v-slot:modal>
-        <h3>Modal title</h3>
-        <p>Modal description</p>
-      </template>
-    </CookieControl>
+    
     <HeaderSite />
     <ChatmixFeatures />
     <CRMFeatures />
