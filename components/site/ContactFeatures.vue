@@ -525,7 +525,7 @@
 export default {
 	name: "ContactFeatures",
 	
-	/* data() {
+	data() {
 		return {
 			form:{
 				firstName: "",
@@ -542,6 +542,7 @@ export default {
 			loading: false,
 		};
 	},
+	/*
 	methods: {
 		validateForm() {
 			this.success = false;
