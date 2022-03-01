@@ -1,22 +1,6 @@
-<!--
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
 <template>
-	<div id="contact" class="bg-gray-100">
-		<div class="max-w-7xl mx-auto px-4 sm:py-24 sm:px-6 lg:px-8">
+	<div  class="bg-gray-100">
+		<div class="max-w-7xl mx-auto px-4 sm:py-24 sm:px-6 lg:px-8" id="contact">
 			<div class="relative bg-white shadow-xl">
 				<h2 class="sr-only">Fale Conosco</h2>
 				<div class="grid grid-cols-1 lg:grid-cols-3">
@@ -541,7 +525,7 @@
 export default {
 	name: "ContactFeatures",
 	
-	data() {
+	/* data() {
 		return {
 			form:{
 				firstName: "",
@@ -614,7 +598,7 @@ export default {
 				this.message = ""
 			}, 3000);
 		},
-    },
+    }, */
 	
 };
 </script>
