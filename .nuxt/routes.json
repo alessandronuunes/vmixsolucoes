@@ -3,14 +3,12 @@
     "name": "contact",
     "path": "/contact",
     "component": "C:\\\\xampp\\\\htdocs\\\\vmixsolucoes\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_47da5017"
+    "chunkName": "pages/contact"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\xampp\\\\htdocs\\\\vmixsolucoes\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_19ed10ee"
+    "chunkName": "pages/index"
   }
 ]

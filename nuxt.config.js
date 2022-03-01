@@ -49,7 +49,8 @@ export default {
   modules: [
     '@nuxtjs/axios', 
     'cookie-universal-nuxt',
-    'nuxtjs-mdi-font'
+    'nuxtjs-mdi-font',
+    'vue-sweetalert2/nuxt',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
